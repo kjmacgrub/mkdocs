@@ -1,0 +1,62 @@
+site_name: Clover Documentation
+theme:
+  name: material
+  features:
+    - tabs
+    - search.highlight
+#    - navigation.indexes
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.expand
+    - navigation.top
+    - navigation.sections
+    - meta
+    - footer
+    - code-highlighting
+    - favicon
+    - site-title
+    - site-description
+    - toc
+    - breadcrumbs
+    - prev-next
+    - edit-on-github
+    - social-share
+    - subscribe
+    - mkdocs
+    - search.suggest
+    - sitemap
+    - robots
+    - canonical
+    - feed
+    - language-select
+    - code-highlighting
+    - code-tabs
+    - code-folding
+    - admonition
+    - toc
+
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - md_in_html
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search
+  - blog:
+        post_date_format: medium
+#  - awesome-pages
