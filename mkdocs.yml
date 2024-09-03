@@ -1,10 +1,15 @@
-site_name: Clover Documentation
+site_name: Clover Documentation and Blog
 theme:
+  icon:
+    logo: material/clover
   name: material
+  palette:
+    primary: teal
+
   features:
     - tabs
     - search.highlight
-#    - navigation.indexes
+    - navigation.indexes
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.expand
@@ -19,8 +24,6 @@ theme:
     - toc
     - breadcrumbs
     - prev-next
-    - edit-on-github
-    - social-share
     - subscribe
     - mkdocs
     - search.suggest
@@ -34,7 +37,9 @@ theme:
     - code-folding
     - admonition
     - toc
-
+nav:
+    - Start here: start.md
+    -     ...
 
 markdown_extensions:
   - admonition
@@ -57,6 +62,7 @@ markdown_extensions:
 
 plugins:
   - search
-  - blog:
-        post_date_format: medium
-#  - awesome-pages
+  - awesome-pages:
+      collapse_single_pages: false
+  - blog
+
